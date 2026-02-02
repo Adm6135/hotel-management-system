@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Hotel Management System</h1>
+    <nav>
+        <a href="index.html">Room Booking</a>
+        <a href="customers.html">Customers</a>
+        <a href="services.html">Services</a>
+    </nav>
+</header>
+
+<section class="container">
+    <h2>Room Booking</h2>
+
+    <form id="bookingForm">
+        <input type="text" id="name" placeholder="Customer Name" required>
+        <select id="room">
+            <option value="">Select Room Type</option>
+            <option>Single</option>
+            <option>Double</option>
+            <option>Deluxe</option>
+        </select>
+        <input type="date" id="date" required>
+        <button type="submit">Book Room</button>
+    </form>
+
+    <h3>Bookings</h3>
+    <ul id="bookingList"></ul>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
